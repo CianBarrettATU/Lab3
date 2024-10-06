@@ -9,6 +9,7 @@ function App() {
     <Router>
       <NavigationBar />
       <Routes>
+        //changed elements to include client side routing
         <Route path="/home" element={<Content />} />
         <Route path="/read" element={<Footer />} />
         <Route path="/create" element={<Header />} />
