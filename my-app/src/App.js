@@ -3,16 +3,19 @@ import NavigationBar from './components/navbar';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Content from './components/Content';
+import Read from './components/Read';
+import Create from './components/create';
 
 function App() {
+  //changed elements to include client side routing
   return (
     <Router>
       <NavigationBar />
       <Routes>
-        //changed elements to include client side routing
-        <Route path="/home" element={<Content />} />
-        <Route path="/read" element={<Footer />} />
-        <Route path="/create" element={<Header />} />
+        
+        <Route path="/" element={<Content />} />
+        <Route path="/Read" element={<Read />} />
+        <Route path="/reate" element={<Create />} />
       </Routes>
       <Footer />
     </Router>
