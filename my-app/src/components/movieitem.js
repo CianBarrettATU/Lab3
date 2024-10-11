@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 
+//useEffect used to perform side effect on react components
 function MovieItem(props) {
   useEffect(() => {
     console.log("Movie Item:", props.mymovie);
   }, [props.mymovie]); // Only run this effect when the mymovie prop changes
 
+  //returns movie data and displays it on a card
   return (
     <div>
       <Card>

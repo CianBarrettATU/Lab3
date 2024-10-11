@@ -1,5 +1,6 @@
 import MovieItem from "./movieitem";
 
+//returns all movieItems by using unique id
 const Movies = (props)=>{
     return props.myMovies.map(
         (movie)=>{

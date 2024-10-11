@@ -1,5 +1,6 @@
 import Movies from "./movies";
 
+//data array stores movie info
 const data = [
     {
         "Title": "Avengers: Infinity War",
@@ -24,6 +25,7 @@ const data = [
     }
 ];
 
+//used to read and display movie data
 const Read = ()=> {
     return(
         <div>
