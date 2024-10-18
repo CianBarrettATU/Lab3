@@ -7,12 +7,13 @@ const Read = ()=> {
 //data array stores movie info
     const [movies, setMovies] = useState([])
 
-    //life cycle hook detects events
+    //useEffect detects events
     useEffect(() => {
         axios.get("https://jsonblob.com/api/jsonblob/1287718524221775872")
           .then((response) => {
             setMovies(response.data.movies);
           })
+          //catches errors.
           .catch((error) => {
             console.log(error);
           });
